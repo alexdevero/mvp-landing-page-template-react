@@ -10,7 +10,7 @@ export const Share = () => (
       <ul className="list-inline d-flex justify-content-center align-items-center m-0">
         {shareConfig.shareLinks.map(shareLink => {
           return (
-            <li>
+            <li key={shareLink.shareLinkID}>
               <a
                 href={shareLink.shareLinkUrl}
                 className={`mr-3 h3 text-decoration-none`}
