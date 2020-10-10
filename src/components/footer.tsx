@@ -18,7 +18,7 @@ export const Footer = () => (
                   <li key={footerLink.footerLinkID}>
                     <a
                       href={footerLink.footerLinkUrl}
-                      className={`h5 text-decoration-none mr-3`}
+                      className="h5 text-decoration-none mr-3 text-body"
                       title={footerLink.footerLinkTitle}
                       target="_blank"
                       rel="noopener noreferrer"

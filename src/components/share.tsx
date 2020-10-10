@@ -13,7 +13,7 @@ export const Share = () => (
             <li key={shareLink.shareLinkID}>
               <a
                 href={shareLink.shareLinkUrl}
-                className={`mr-3 h3 text-decoration-none`}
+                className="mr-3 h3 text-decoration-none text-body"
                 title={shareLink.shareLinkTitle}
                 target="_blank"
                 rel="noopener noreferrer"
