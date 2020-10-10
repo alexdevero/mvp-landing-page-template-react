@@ -178,11 +178,13 @@ export const footerConfig = {
   footerCopyrightText: `Copyright ${new Date().getFullYear()}. Alex Devero, all rights reserved.`,
   footerLinks: [
     {
+      footerLinkID: 'foot_0001',
       footerLinkIconName: 'far fa-envelope',
       footerLinkTitle: 'Email',
       footerLinkUrl: ''
     },
     {
+      footerLinkID: 'foot_0002',
       footerLinkIconName: 'fab fa-product-hunt',
       footerLinkTitle: 'Product Hunt',
       footerLinkUrl: ''
