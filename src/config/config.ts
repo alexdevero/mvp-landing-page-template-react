@@ -102,35 +102,35 @@ export const pricingConfig = {
   lowTier: {
     tierHeading: 'Starter',
     tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFetures: {
-      tierFetureOne: 'One',
-      tierFetureTwo: 'Two',
-      tierFetureThree: 'Three'
+    tierFeatures: {
+      tierFeatureOne: 'One',
+      tierFeatureTwo: 'Two',
+      tierFeatureThree: 'Three'
     },
     tierPrice: '29'
   },
   mediumTier: {
     tierHeading: 'Standard',
     tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFetures: {
-      tierFetureOne: 'One',
-      tierFetureTwo: 'Two',
-      tierFetureThree: 'Three',
-      tierFetureFour: 'Four',
-      tierFetureFive: 'Five'
+    tierFeatures: {
+      tierFeatureOne: 'One',
+      tierFeatureTwo: 'Two',
+      tierFeatureThree: 'Three',
+      tierFeatureFour: 'Four',
+      tierFeatureFive: 'Five'
     },
     tierPrice: '49'
   },
   topTier: {
     tierHeading: 'Pro',
     tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFetures: {
-      tierFetureOne: 'One',
-      tierFetureTwo: 'Two',
-      tierFetureThree: 'Three',
-      tierFetureFour: 'Four',
-      tierFetureFive: 'Five',
-      tierFetureSix: 'Six'
+    tierFeatures: {
+      tierFeatureOne: 'One',
+      tierFeatureTwo: 'Two',
+      tierFeatureThree: 'Three',
+      tierFeatureFour: 'Four',
+      tierFeatureFive: 'Five',
+      tierFeaturesix: 'Six'
     },
     tierPrice: '99'
   }
