@@ -27,6 +27,7 @@ export const heroConfig = {
 export const splitScreenConfig = {
   splitScreens: [
     {
+      splitScreenID: 'splt_0001',
       splitScreenImageUrl: '',
       splitScreenImageTitle: '',
       splitScreenHeading: 'One',
@@ -34,6 +35,7 @@ export const splitScreenConfig = {
       splitScreenDirection: 'image-left'
     },
     {
+      splitScreenID: 'splt_0002',
       splitScreenImageUrl: '',
       splitScreenImageTitle: '',
       splitScreenHeading: 'Two',
@@ -41,6 +43,7 @@ export const splitScreenConfig = {
       splitScreenDirection: 'image-right'
     },
     {
+      splitScreenID: 'splt_0003',
       splitScreenImageUrl: '',
       splitScreenImageTitle: '',
       splitScreenHeading: 'Three',
@@ -55,31 +58,37 @@ export const featuresConfig = {
   featuresItemsPerRow: 3,
   features: [
     {
+      featureID: 'feat_0001',
       featureImageUrl: '',
       featureHeading: 'One',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     },
     {
+      featureID: 'feat_0002',
       featureImageUrl: '',
       featureHeading: 'Two',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     },
     {
+      featureID: 'feat_0003',
       featureImageUrl: '',
       featureHeading: 'Three',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     },
     {
+      featureID: 'feat_0004',
       featureImageUrl: '',
       featureHeading: 'Four',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     },
     {
+      featureID: 'feat_0005',
       featureImageUrl: '',
       featureHeading: 'Five',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     },
     {
+      featureID: 'feat_0006',
       featureImageUrl: '',
       featureHeading: 'Six',
       featureText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
@@ -139,21 +148,25 @@ export const shareConfig = {
   shareText: 'Please, help us spread the word about "X" by sharing it with your friends.',
   shareLinks: [
     {
+      shareLinkID: 'shrl_0001',
       shareLinkIconName: 'fab fa-twitter',
       shareLinkTitle: 'Twitter',
       shareLinkUrl: ''
     },
     {
+      shareLinkID: 'shrl_0002',
       shareLinkIconName: 'fab fa-facebook-square',
       shareLinkTitle: 'Facebook',
       shareLinkUrl: ''
     },
     {
+      shareLinkID: 'shrl_0003',
       shareLinkIconName: 'fab fa-reddit',
       shareLinkTitle: 'Reddit',
       shareLinkUrl: ''
     },
     {
+      shareLinkID: 'shrl_0004',
       shareLinkIconName: 'far fa-envelope',
       shareLinkTitle: 'Email',
       shareLinkUrl: ''
