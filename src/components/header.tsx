@@ -22,6 +22,7 @@ export const Header = (props: HeaderUI) => (
                 className="custom-control-input"
                 id="customSwitch1"
                 checked={props.darkMode}
+                readOnly={true}
               />
               <label className="custom-control-label" htmlFor="customSwitch1">
                 <span aria-label="Crescent Moon" role="img">🌙</span>
