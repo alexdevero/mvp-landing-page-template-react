@@ -15,7 +15,7 @@ export const Footer = () => (
             <ul className="list-inline d-flex justify-content-end align-items-center">
               {footerConfig.footerLinks.map(footerLink => {
                 return (
-                  <li>
+                  <li key={footerLink.footerLinkID}>
                     <a
                       href={footerLink.footerLinkUrl}
                       className={`h5 text-decoration-none mr-3`}
