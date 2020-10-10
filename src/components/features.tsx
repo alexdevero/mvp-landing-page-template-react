@@ -18,7 +18,7 @@ export const Features = () => (
 
           <h2 className="mt-0 mb-3 h4">{feature.featureHeading}</h2>
 
-          <p className="m-0">{feature.featureText}</p>
+          <p className="m-0 font-weight-normal">{feature.featureText}</p>
         </div>
       )
     })}
