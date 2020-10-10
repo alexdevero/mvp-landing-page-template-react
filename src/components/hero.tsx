@@ -13,12 +13,12 @@ interface HeroUI {
 export const Hero = (props: HeroUI) => (
   <div className="jumbotron jumbotron-fluid bg-white pt-6 pb-6">
     <div className="row justify-content-center align-items-center text-center">
-      <div className="col-md-8 col-lg-6">
-        <h1 className="display-4 mt-0 mb-4">{heroConfig.heroHeading}</h1>
+      <div className="col-md-8 col-lg-7 col-xl-6">
+        <h1 className="display-4 font-weight-normal mt-0 mb-4">{heroConfig.heroHeading}</h1>
 
-        <p className="lead mt-0 mb-0">{heroConfig.heroText}</p>
+        <p className="lead mt-0 mb-0 font-weight-normal">{heroConfig.heroText}</p>
 
-        <div className="mt-3">
+        <div className="mt-4">
           <div className="form-row justify-content-center align-items-center">
             <div className="col-sm-8">
               <input
