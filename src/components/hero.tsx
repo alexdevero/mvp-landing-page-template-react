@@ -12,15 +12,15 @@ interface HeroUI {
 
 export const Hero = (props: HeroUI) => (
   <div className="jumbotron jumbotron-fluid bg-white pt-6 pb-6">
-    <div className="row">
+    <div className="row justify-content-center align-items-center text-center">
       <div className="col-md-8 col-lg-6">
         <h1 className="display-4 mt-0 mb-4">{heroConfig.heroHeading}</h1>
 
         <p className="lead mt-0 mb-0">{heroConfig.heroText}</p>
 
         <div className="mt-3">
-          <div className="form-row">
-            <div className="col">
+          <div className="form-row justify-content-center align-items-center">
+            <div className="col-sm-8">
               <input
                 type="text"
                 className="form-control"
@@ -30,10 +30,10 @@ export const Hero = (props: HeroUI) => (
               />
             </div>
 
-            <div className="col">
+            <div className="col-sm-4 mt-3 mt-sm-0">
               <button
                 type="submit"
-                className="btn btn-primary btn-md"
+                className="btn btn-primary btn-md w-100"
                 onClick={props.handleSubmitForm}
               >{heroConfig.heroButtonText}</button>
             </div>
