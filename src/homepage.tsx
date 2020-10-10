@@ -44,8 +44,6 @@ export const Homepage = () => {
     setDarkMode(!darkMode)
   }
 
-  console.log(darkMode)
-
   return (
     <div className={`page-wrapper ${darkMode ? 'mode-dark' : 'mode-light'}`}>
       <Header darkMode={darkMode} handleDarkMode={handleModeChange} />
