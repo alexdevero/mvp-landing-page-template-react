@@ -148,25 +148,25 @@ export const shareConfig = {
   shareText: 'Please, help us spread the word about "X" by sharing it with your friends.',
   shareLinks: [
     {
-      shareLinkID: 'shrl_0001',
+      shareLinkID: 'shr_0001',
       shareLinkIconName: 'fab fa-twitter',
       shareLinkTitle: 'Twitter',
       shareLinkUrl: ''
     },
     {
-      shareLinkID: 'shrl_0002',
+      shareLinkID: 'shr_0002',
       shareLinkIconName: 'fab fa-facebook-square',
       shareLinkTitle: 'Facebook',
       shareLinkUrl: ''
     },
     {
-      shareLinkID: 'shrl_0003',
+      shareLinkID: 'shr_0003',
       shareLinkIconName: 'fab fa-reddit',
       shareLinkTitle: 'Reddit',
       shareLinkUrl: ''
     },
     {
-      shareLinkID: 'shrl_0004',
+      shareLinkID: 'shr_0004',
       shareLinkIconName: 'far fa-envelope',
       shareLinkTitle: 'Email',
       shareLinkUrl: ''
