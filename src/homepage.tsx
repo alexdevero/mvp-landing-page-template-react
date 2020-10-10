@@ -62,7 +62,7 @@ export const Homepage = () => {
         </Container>
 
         {splitScreenConfig.splitScreens.map(splitScreen => {
-          return <Container sectionName="hero" hasContainer={true}>
+          return <Container sectionName="hero" hasContainer={true} key={splitScreen.splitScreenID}>
               <SplitSection
               direction={splitScreen.splitScreenDirection}
               heading={splitScreen.splitScreenHeading}
