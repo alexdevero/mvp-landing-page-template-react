@@ -138,8 +138,8 @@ export const pricingConfig = {
 
 export const signUpConfig = {
   signUpHeading: 'Try "X"',
-  signUpText: 'Sign up below to get started with "X".',
-  signUpInputPlacehodler: 'Enter your email...',
+  signUpText: 'Subscribe to receive email notifications when "X" is launched and about new features and new releases.',
+  signUpInputPlaceholder: 'Enter your email...',
   signUpButtonText: 'Sign me up',
   signUpErrorMessage: 'Please use correct email address.'
 }
