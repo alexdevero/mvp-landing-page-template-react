@@ -7,6 +7,7 @@ export const Features = () => (
     {featuresConfig.features.length > 0 && featuresConfig.features.map((feature, i) => {
       return (
         <div
+          key={feature.featureID}
           className={`col-md-6 col-lg-${12 / featuresConfig.featuresItemsPerRow} ${i > 0 ? 'mt-5' : ''} ${i === 1 ? 'mt-md-0' : ''} ${i === 2 ? 'mt-lg-0' : ''}`}
         >
           {feature.featureImageUrl.length > 0 ? (
