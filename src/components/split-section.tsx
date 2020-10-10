@@ -11,9 +11,9 @@ interface SplitSectionUI {
 export const SplitSection = (props: SplitSectionUI) => (
   <div className={`row flex-column-reverse ${props.direction === 'image-left' ? 'flex-md-row-reverse' : 'flex-md-row'}`}>
     <div className="col-md-6">
-      <h2 className="mt-4 mt-md-0 mb-3 h4">{props.heading}</h2>
+      <h2 className="mt-4 mt-md-0 mb-3 h3">{props.heading}</h2>
 
-      <p>{props.textContent}</p>
+      <p className="lead font-weight-normal">{props.textContent}</p>
     </div>
 
     <div className={`col-md-6 d-flex ${props.direction === 'image-right' ? 'justify-content-md-end' : 'justify-content-md-start'}`}>
