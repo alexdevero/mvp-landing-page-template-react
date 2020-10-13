@@ -18,7 +18,7 @@ export const Pricing = () => (
 
             <ul className="list-unstyled px-5 text-center">
               {tier.tierFeatures.map(tierFeature => {
-                return tierFeature.tierFeatureAvailable ? (
+                return !tierFeature.tierFeatureAvailable ? (
                   <li key={tierFeature.tierFeatureId} className="text-black-50">
                     <span className="fas fa-times mr-2" /> {tierFeature.tierFeatureTitle}
                   </li>
