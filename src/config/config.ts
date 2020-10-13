@@ -102,6 +102,7 @@ export const pricingConfig = {
   pricingType: 'monthly',
   tiers: [
     {
+      tierId: 'pricing_0001',
       tierHeading: 'Basic',
       tierText: 'With supporting text below as a natural lead-in to additional content.',
       tierSelected: false,
