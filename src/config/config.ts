@@ -97,7 +97,6 @@ export const featuresConfig = {
 }
 
 export const pricingConfig = {
-  tierId: 'pricing_0001',
   pricingCurrency: '$',
   pricingType: 'monthly',
   tiers: [
@@ -106,11 +105,38 @@ export const pricingConfig = {
       tierHeading: 'Basic',
       tierText: 'With supporting text below as a natural lead-in to additional content.',
       tierSelected: false,
-      tierFeatures: {
-        tierFeatureOne: 'Feature one',
-        tierFeatureTwo: 'Feature two',
-        tierFeatureThree: 'Feature three'
-      },
+      tierFeatures: [
+        {
+          tierFeatureId: 'tierFeat_0001',
+          tierFeatureTitle: 'Feature one',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0002',
+          tierFeatureTitle: 'Feature two',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0003',
+          tierFeatureTitle: 'Feature three',
+          tierFeatureAvailable: false,
+        },
+        {
+          tierFeatureId: 'tierFeat_0004',
+          tierFeatureTitle: 'Feature four',
+          tierFeatureAvailable: false,
+        },
+        {
+          tierFeatureId: 'tierFeat_0005',
+          tierFeatureTitle: 'Feature five',
+          tierFeatureAvailable: false,
+        },
+        {
+          tierFeatureId: 'tierFeat_0006',
+          tierFeatureTitle: 'Feature six',
+          tierFeatureAvailable: false,
+         }
+      ],
       tierPrice: '29'
     },
     {
@@ -118,13 +144,38 @@ export const pricingConfig = {
       tierHeading: 'Plus',
       tierText: 'With supporting text below as a natural lead-in to additional content.',
       tierSelected: true,
-      tierFeatures: {
-        tierFeatureOne: 'Feature one',
-        tierFeatureTwo: 'Feature two',
-        tierFeatureThree: 'Feature three',
-        tierFeatureFour: 'Feature four',
-        tierFeatureFive: 'Feature five'
-      },
+      tierFeatures: [
+        {
+          tierFeatureId: 'tierFeat_0007',
+          tierFeatureTitle: 'Feature one',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0008',
+          tierFeatureTitle: 'Feature two',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0009',
+          tierFeatureTitle: 'Feature three',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0010',
+          tierFeatureTitle: 'Feature four',
+          tierFeatureAvailable: false,
+        },
+        {
+          tierFeatureId: 'tierFeat_0011',
+          tierFeatureTitle: 'Feature five',
+          tierFeatureAvailable: false,
+        },
+        {
+          tierFeatureId: 'tierFeat_0012',
+          tierFeatureTitle: 'Feature six',
+          tierFeatureAvailable: false,
+         }
+      ],
       tierPrice: '49'
     },
     {
@@ -132,14 +183,38 @@ export const pricingConfig = {
       tierHeading: 'Pro',
       tierText: 'With supporting text below as a natural lead-in to additional content.',
       tierSelected: false,
-      tierFeatures: {
-        tierFeatureOne: 'Feature one',
-        tierFeatureTwo: 'Feature two',
-        tierFeatureThree: 'Feature three',
-        tierFeatureFour: 'Feature four',
-        tierFeatureFive: 'Feature five',
-        tierFeatureSix: 'Feature six'
-      },
+      tierFeatures: [
+        {
+          tierFeatureId: 'tierFeat_0013',
+          tierFeatureTitle: 'Feature one',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0014',
+          tierFeatureTitle: 'Feature two',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0015',
+          tierFeatureTitle: 'Feature three',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0016',
+          tierFeatureTitle: 'Feature four',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0017',
+          tierFeatureTitle: 'Feature five',
+          tierFeatureAvailable: true,
+        },
+        {
+          tierFeatureId: 'tierFeat_0018',
+          tierFeatureTitle: 'Feature six',
+          tierFeatureAvailable: true,
+         }
+      ],
       tierPrice: '99'
     }
   ]
