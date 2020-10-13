@@ -97,43 +97,51 @@ export const featuresConfig = {
 }
 
 export const pricingConfig = {
+  tierId: 'pricing_0001',
   pricingCurrency: '$',
   pricingType: 'monthly',
-  lowTier: {
-    tierHeading: 'Starter',
-    tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFeatures: {
-      tierFeatureOne: 'One',
-      tierFeatureTwo: 'Two',
-      tierFeatureThree: 'Three'
+  tiers: [
+    {
+      tierHeading: 'Basic',
+      tierText: 'With supporting text below as a natural lead-in to additional content.',
+      tierSelected: false,
+      tierFeatures: {
+        tierFeatureOne: 'Feature one',
+        tierFeatureTwo: 'Feature two',
+        tierFeatureThree: 'Feature three'
+      },
+      tierPrice: '29'
     },
-    tierPrice: '29'
-  },
-  mediumTier: {
-    tierHeading: 'Standard',
-    tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFeatures: {
-      tierFeatureOne: 'One',
-      tierFeatureTwo: 'Two',
-      tierFeatureThree: 'Three',
-      tierFeatureFour: 'Four',
-      tierFeatureFive: 'Five'
+    {
+      tierId: 'pricing_0002',
+      tierHeading: 'Plus',
+      tierText: 'With supporting text below as a natural lead-in to additional content.',
+      tierSelected: true,
+      tierFeatures: {
+        tierFeatureOne: 'Feature one',
+        tierFeatureTwo: 'Feature two',
+        tierFeatureThree: 'Feature three',
+        tierFeatureFour: 'Feature four',
+        tierFeatureFive: 'Feature five'
+      },
+      tierPrice: '49'
     },
-    tierPrice: '49'
-  },
-  topTier: {
-    tierHeading: 'Pro',
-    tierText: 'With supporting text below as a natural lead-in to additional content.',
-    tierFeatures: {
-      tierFeatureOne: 'One',
-      tierFeatureTwo: 'Two',
-      tierFeatureThree: 'Three',
-      tierFeatureFour: 'Four',
-      tierFeatureFive: 'Five',
-      tierFeaturesix: 'Six'
-    },
-    tierPrice: '99'
-  }
+    {
+      tierId: 'pricing_0003',
+      tierHeading: 'Pro',
+      tierText: 'With supporting text below as a natural lead-in to additional content.',
+      tierSelected: false,
+      tierFeatures: {
+        tierFeatureOne: 'Feature one',
+        tierFeatureTwo: 'Feature two',
+        tierFeatureThree: 'Feature three',
+        tierFeatureFour: 'Feature four',
+        tierFeatureFive: 'Feature five',
+        tierFeaturesix: 'Feature six'
+      },
+      tierPrice: '99'
+    }
+  ]
 }
 
 export const signUpConfig = {
