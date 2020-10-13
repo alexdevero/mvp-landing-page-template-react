@@ -229,6 +229,7 @@ export const signUpConfig = {
 }
 
 export const shareConfig = {
+  shareHeading: 'Help us spread the word',
   shareText: 'Please, help us spread the word about "X" by sharing it with your friends.',
   shareLinks: [
     {
