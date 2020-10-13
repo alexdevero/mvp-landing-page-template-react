@@ -137,7 +137,7 @@ export const pricingConfig = {
         tierFeatureThree: 'Feature three',
         tierFeatureFour: 'Feature four',
         tierFeatureFive: 'Feature five',
-        tierFeaturesix: 'Feature six'
+        tierFeatureSix: 'Feature six'
       },
       tierPrice: '99'
     }
