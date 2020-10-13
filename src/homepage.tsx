@@ -75,7 +75,7 @@ export const Homepage = () => {
           <Features />
         </Container>
 
-        <Container sectionName="Pricing" hasContainer={true}>
+        <Container sectionName="Pricing" hasContainer={true} className="bg-light">
           <Pricing />
         </Container>
 
