@@ -42,7 +42,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "axios": "0.20.0",
+    "axios": "0.21.1",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "sanitize-html": "2.0.0"
