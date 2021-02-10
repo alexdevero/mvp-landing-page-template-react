@@ -6,7 +6,7 @@
       $myEmail = fgets($envFile);
 
       // Get the form fields and remove whitespace.
-      $name = 'Landing page MVP';
+      $name = 'Landing page MVP registration';
       $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
 
       // Check that data was sent to the mailer.
@@ -21,12 +21,12 @@
       $recipient = "$myEmail";
 
       // Set the email subject.
-      $subject = "Contact via DEVERO Studio from $name";
+      $subject = "$name";
 
       // Build the email content.
-      $email_content = "Name: $name\n";
-      $email_content .= "Email: $email\n\n";
-      $email_content .= "Subject: Contact Landing Page MVP\n\n";
+      $email_content = "Name: $name\n\n";
+      $email_content .= "Registered email: $email\n\n";
+      $email_content .= "Subject: Landing page MVP registration\n\n";
 
       // Build the email headers.
       $email_headers = "From: $name <$email>";
