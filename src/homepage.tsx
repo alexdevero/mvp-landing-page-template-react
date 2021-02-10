@@ -19,7 +19,7 @@ export const Homepage = () => {
   const [darkMode, setDarkMode] = useState(false)
   const [signUpEmail, setSignUpEmail] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
-  const [successMessage, setSuccesMessage] = useState('')
+  const [successMessage, setSuccessMessage] = useState('')
 
   const submitForm = () => {
     if (signUpEmail.length > 0 && /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(signUpEmail)) {
