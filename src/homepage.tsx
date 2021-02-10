@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { ajax } from 'jQuery'
+import { useState } from 'react'
+import $ from 'jquery'
 
 // Import components
 import { Hero } from './components/hero'
@@ -28,7 +28,7 @@ export const Homepage = () => {
 
       // Process and send the email
       setTimeout(() => {
-        ajax({
+        $.ajax({
           data: {
             email: signUpEmail
           },
