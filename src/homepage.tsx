@@ -26,13 +26,31 @@ export const Homepage = () => {
       console.log(signUpEmail)
       setErrorMessage('')
 
-      axios
-        .post('url to php file', signUpEmail)
-        .then(res => {
-          setSignUpEmail('')
-          setSuccesMessage(res.data)
+      // Process and send the email
+      setTimeout(() => {
+        ajax({
+          data: {
+            email: signUpEmail
+          },
+          type: 'POST',
+          url: './contact.php',
+          success: function(data) {
+            // Reset email input state
+            setSignUpEmail('')
+
+            // Show and log success message
+            setSuccessMessage('Your sign up was successful.')
+            console.info(data)
+          },
+          error: function(xhr, status, err) {
+            // Show and log error message
+            console.log(xhr)
+            console.error(status, err.toString())
+
+            setErrorMessage('There was a problem with your sign up. Please refresh and page and try it again.')
+          }
         })
-        .catch(err => setErrorMessage(err))
+      }, 1000)
     } else {
       setErrorMessage(signUpConfig.signUpErrorMessage)
     }
