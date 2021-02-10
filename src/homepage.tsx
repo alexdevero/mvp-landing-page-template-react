@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios'
+import { ajax } from 'jQuery'
 
 // Import components
 import { Hero } from './components/hero'
