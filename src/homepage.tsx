@@ -18,14 +18,13 @@ import { splitScreenConfig, signUpConfig } from './config/config'
 export const Homepage = () => {
   const [darkMode, setDarkMode] = useState(false)
   const [signUpEmail, setSignUpEmail] = useState('')
+  const [spamBotMessage, setSpamBotMessage] = useState('')
   const [errorMessage, setErrorMessage] = useState('')
   const [successMessage, setSuccessMessage] = useState('')
 
   const submitForm = () => {
-    if (signUpEmail.length > 0 && /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(signUpEmail)) {
-      console.log(signUpEmail)
+    if (spamBotMessage.length === 0 && signUpEmail.length > 0 && /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(signUpEmail)) {
       setErrorMessage('')
-
       // Process and send the email
       setTimeout(() => {
         $.ajax({
@@ -78,15 +77,17 @@ export const Homepage = () => {
         </Container>
 
         {splitScreenConfig.splitScreens.map(splitScreen => {
-          return <Container sectionName="hero" hasContainer={true} key={splitScreen.splitScreenID}>
+          return (
+            <Container sectionName="hero" hasContainer={true} key={splitScreen.splitScreenID}>
               <SplitSection
-              direction={splitScreen.splitScreenDirection}
-              heading={splitScreen.splitScreenHeading}
-              textContent={splitScreen.splitScreenText}
-              imgTitle={splitScreen.splitScreenImageTitle}
-              imgUrl={splitScreen.splitScreenImageUrl}
-            />
+                direction={splitScreen.splitScreenDirection}
+                heading={splitScreen.splitScreenHeading}
+                textContent={splitScreen.splitScreenText}
+                imgTitle={splitScreen.splitScreenImageTitle}
+                imgUrl={splitScreen.splitScreenImageUrl}
+              />
             </Container>
+          )
         })}
 
         <Container sectionName="Features" hasContainer={true}>
@@ -101,6 +102,8 @@ export const Homepage = () => {
           <SignUp
             signUpEmail={signUpEmail}
             handleSetSignUpEmail={setSignUpEmail}
+            spamBotMessage={spamBotMessage}
+            handleSetSpamBotMessage={setSpamBotMessage}
             errorMessage={errorMessage}
             successMessage={successMessage}
             handleSubmitForm={submitForm}

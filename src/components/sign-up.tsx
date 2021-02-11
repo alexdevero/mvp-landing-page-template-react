@@ -8,6 +8,8 @@ interface SignUpUI {
   successMessage: string;
   errorMessage: string;
   handleSubmitForm: () => void;
+  spamBotMessage: string;
+  handleSetSpamBotMessage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 export const SignUp = (props: SignUpUI) => (
@@ -55,6 +57,21 @@ export const SignUp = (props: SignUpUI) => (
                 className="btn btn-primary w-100 mt-3 mt-md-0"
                 onClick={props.handleSubmitForm}
               >{signUpConfig.signUpButtonText}</button>
+            </div>
+
+            <div className="col-12 d-none">
+              {/* <div className="input-group-prepend">
+                <div className="input-group-text">@</div>
+              </div> */}
+
+              <input
+                type="text"
+                className="form-control w-100"
+                id="inlineFormInputGroup"
+                placeholder=""
+                value={props.spamBotMessage}
+                onChange={(event) => props.handleSetSpamBotMessage(event.currentTarget.value)}
+              />
             </div>
           </div>
 
