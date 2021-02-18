@@ -77,6 +77,8 @@ export const Homepage = () => {
           />
         </Container>
 
+        <div id="mainFeatures" />
+
         {splitScreenConfig.splitScreens.map(splitScreen => {
           return (
             <Container sectionName="hero" hasContainer={true} key={splitScreen.splitScreenID}>
@@ -91,11 +93,11 @@ export const Homepage = () => {
           )
         })}
 
-        <Container sectionName="Features" hasContainer={true}>
+        <Container id="features" sectionName="Features" hasContainer={true}>
           <Features />
         </Container>
 
-        <Container sectionName="Pricing" hasContainer={true} className="bg-light">
+        <Container id="pricing" sectionName="Pricing" hasContainer={true} className="bg-light">
           <Pricing />
         </Container>
 
@@ -103,7 +105,7 @@ export const Homepage = () => {
           <FinalBenefits />
         </Container>
 
-        <Container sectionName="SignUp" hasContainer={true}>
+        <Container id="signUp" sectionName="SignUp" hasContainer={true}>
           <SignUp
             signUpEmail={signUpEmail}
             handleSetSignUpEmail={setSignUpEmail}
