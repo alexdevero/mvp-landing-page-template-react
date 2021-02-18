@@ -4,6 +4,7 @@ import $ from 'jquery'
 // Import components
 import { Hero } from './components/hero'
 import { Features } from './components/features'
+import { FinalBenefits } from './components/final-benefits'
 import { Footer } from './components/footer'
 import { Header } from './components/header'
 import { Pricing } from './components/pricing'
@@ -96,6 +97,10 @@ export const Homepage = () => {
 
         <Container sectionName="Pricing" hasContainer={true} className="bg-light">
           <Pricing />
+        </Container>
+
+        <Container sectionName="FinalBenefits" hasContainer={true}>
+          <FinalBenefits />
         </Container>
 
         <Container sectionName="SignUp" hasContainer={true}>
