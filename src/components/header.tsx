@@ -1,4 +1,5 @@
 import React from 'react'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 import { navConfig } from './../config/config'
 
@@ -10,7 +11,15 @@ interface HeaderUI {
 export const Header = (props: HeaderUI) => (
   <header className="pt-3 pb-3">
     <div className="container">
-      <ul className="list-inline d-flex align-items-end justify-content-end">
+      <ul className="list-inline d-flex align-items-end justify-content-space-between">
+        <li className="p-1"><AnchorLink href="#mainFeatures">Features</AnchorLink></li>
+
+        <li className="p-1"><AnchorLink href="#pricing">Pricing</AnchorLink></li>
+
+        {/* <li className="p-1"><AnchorLink href="#testimonials">Testimonials</AnchorLink></li> */}
+
+        <li className="p-1 mr-auto"><AnchorLink href="#signUp">Sign Up</AnchorLink></li>
+
         {navConfig.useDarkMode && (
           <li>
             <div
