@@ -134,8 +134,8 @@ export const pricingConfig = {
         {
           tierFeatureId: 'tierFeat_0006',
           tierFeatureTitle: 'Feature six',
-          tierFeatureAvailable: false,
-         }
+          tierFeatureAvailable: false
+        }
       ],
       tierPrice: '29'
     },
@@ -173,8 +173,8 @@ export const pricingConfig = {
         {
           tierFeatureId: 'tierFeat_0012',
           tierFeatureTitle: 'Feature six',
-          tierFeatureAvailable: false,
-         }
+          tierFeatureAvailable: false
+        }
       ],
       tierPrice: '49'
     },
@@ -212,10 +212,35 @@ export const pricingConfig = {
         {
           tierFeatureId: 'tierFeat_0018',
           tierFeatureTitle: 'Feature six',
-          tierFeatureAvailable: true,
-         }
+          tierFeatureAvailable: true
+        }
       ],
       tierPrice: '99'
+    }
+  ]
+}
+
+export const finalBenefits = {
+  finalBenefitsNumOfRows: 1,
+  finalBenefitsItemsPerRow: 3,
+  finalBenefits: [
+    {
+      finalBenefitsID: 'feat_0001',
+      finalBenefitsImageUrl: '',
+      finalBenefitsHeading: 'One',
+      finalBenefitsText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
+    },
+    {
+      finalBenefitsID: 'feat_0002',
+      finalBenefitsImageUrl: '',
+      finalBenefitsHeading: 'Two',
+      finalBenefitsText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
+    },
+    {
+      finalBenefitsID: 'feat_0003',
+      finalBenefitsImageUrl: '',
+      finalBenefitsHeading: 'Three',
+      finalBenefitsText: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo tenetur eligendi commodi qui culpa blanditiis.'
     }
   ]
 }
