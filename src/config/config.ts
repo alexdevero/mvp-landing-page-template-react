@@ -246,7 +246,7 @@ export const finalBenefits = {
 }
 
 export const signUpConfig = {
-  signUpHeading: 'Subscribe to "X"',
+  signUpHeading: 'Subscribe for "X"',
   signUpText: 'Subscribe to receive email notifications when "X" is launched and about new features and new releases.',
   signUpInputPlaceholder: 'Enter your email...',
   signUpButtonText: 'Sign me up',
