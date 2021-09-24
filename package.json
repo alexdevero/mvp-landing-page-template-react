@@ -42,7 +42,7 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "axios": "0.21.1",
+    "axios": "0.21.2",
     "jquery": "3.5.1",
     "react": "17.0.1",
     "react-anchor-link-smooth-scroll": "^1.0.12",
