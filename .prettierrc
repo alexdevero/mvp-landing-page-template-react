@@ -1,7 +1,12 @@
 {
   "singleQuote": true,
   "semi": false,
-  "importOrder": ["^@components$", "^@contexts$", "^@data$", "^@hooks$", "^@custom-types$", "^[./]"],
+  "importOrder": [
+    "<THIRD_PARTY_MODULES>",
+    "^@(components|contexts|data|hooks|custom-types)$",
+    "^[./]"
+  ],
   "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true,
   "experimentalBabelParserPluginsList" : ["jsx", "typescript"]
 }
