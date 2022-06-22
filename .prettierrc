@@ -1,0 +1,7 @@
+{
+  "singleQuote": true,
+  "semi": false,
+  "importOrder": ["^@components$", "^@contexts$", "^@data$", "^@hooks$", "^@custom-types$", "^[./]"],
+  "importOrderSeparation": true,
+  "experimentalBabelParserPluginsList" : ["jsx", "typescript"]
+}
