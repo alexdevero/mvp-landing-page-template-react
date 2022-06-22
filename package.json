@@ -1,59 +1,24 @@
 {
-  "name": "mvp-landing-page-template",
-  "version": "1.0.0",
-  "description": "Awesome landing page template to help you test your MVP.",
-  "license": "MIT",
-  "private": false,
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate.git"
-  },
-  "homepage": ".",
-  "bugs": {
-    "url": "https://github.com/alexdevero/electron-react-webpack-boilerplate/issues"
-  },
-  "author": {
-    "name": "Alex Devero",
-    "email": "deveroalex@gmail.com",
-    "url": "https://github.com/alexdevero"
-  },
-  "keywords": [
-    "landing",
-    "landing page",
-    "react",
-    "spa"
-  ],
-  "engines": {
-    "node": ">=12.0.0",
-    "npm": ">=6.0.0",
-    "yarn": ">=1.2.0"
-  },
-  "main": "src/index.tsx",
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
+  "name": "mvp-landing-page-template-react",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "axios": "0.21.2",
-    "jquery": "3.5.1",
-    "react": "17.0.1",
-    "react-anchor-link-smooth-scroll": "^1.0.12",
-    "react-dom": "17.0.1",
-    "sanitize-html": "2.3.2"
+    "next": "12.1.6",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/jquery": "^3.5.5",
-    "@types/react": "17.0.1",
-    "@types/react-dom": "17.0.0",
-    "react-scripts": "4.0.2",
-    "typescript": "4.1.4"
+    "@types/node": "18.0.0",
+    "@types/react": "18.0.14",
+    "@types/react-dom": "18.0.5",
+    "eslint": "8.18.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "4.7.4"
   }
 }
