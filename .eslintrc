@@ -24,8 +24,7 @@
   },
   "extends": [
     "plugin:react-hooks/recommended",
-    "plugin:@next/next/recommended",
-    "plugin:@next/core-web-vitals"
+    "plugin:@next/next/recommended"
   ],
   "rules":{
     // 0 - "off"; 1 - "warn"; 2 - "error"
