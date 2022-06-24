@@ -1,0 +1,21 @@
+.toast-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toast-text {
+  font-size: 14px;
+}
+
+.toast-cancel-icon {
+  margin-left: 8px;
+  border-radius: 50%;
+  background-color: #f3f4f6;
+  min-width: 21px;
+  height: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+}
