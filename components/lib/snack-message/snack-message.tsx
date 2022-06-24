@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-import './../../styles/components/snack-message.module.css'
+import './snack-message.module.css'
 
 export interface SnackMessageProps {
   text: string;
