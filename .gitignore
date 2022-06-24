@@ -16,6 +16,7 @@
 /build
 
 # misc
+__ignore__/
 .DS_Store
 *.pem
 
