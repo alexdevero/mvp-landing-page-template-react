@@ -1,6 +1,6 @@
 import { memo } from 'react'
 
-import './snack-message.module.css'
+import styles from './snack-message.module.css'
 
 export interface SnackMessageProps {
   text: string;
@@ -8,9 +8,9 @@ export interface SnackMessageProps {
 }
 
 export const SnackMessage = memo((props: SnackMessageProps) => (
-  <span className="toast-wrapper">
-    <span className="toast-text">{props.text}</span>
-    <button className="toast-cancel-icon" onClick={props.onDismiss}>
+  <span className={styles.toastWrapper}>
+    <span className={styles.toastText}>{props.text}</span>
+    <button className={styles.toastCancelIcon} onClick={props.onDismiss}>
       &times;
     </button>
   </span>

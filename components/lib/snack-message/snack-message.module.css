@@ -1,14 +1,14 @@
-.toast-wrapper {
+.toastWrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.toast-text {
+.toastText {
   font-size: 14px;
 }
 
-.toast-cancel-icon {
+.toastCancelIcon {
   margin-left: 8px;
   border-radius: 50%;
   background-color: #f3f4f6;
