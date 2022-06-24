@@ -1,9 +1,9 @@
-import { useEffect } from "react"
+import { useEffect } from 'react'
 
-export const useWindowEvent = <K extends string>(
+export const useWindowEvent = <K extends keyof WindowEventMap>(
   type: K,
-  listener: EventListenerOrEventListenerObject,
-  options?: boolean | EventListenerOptions
+  listener: (this: Window, ev: WindowEventMap[K]) => any,
+  options?: boolean | AddEventListenerOptions
 ) => {
   useEffect(() => {
     window.addEventListener(type, listener, options)
